@@ -218,12 +218,12 @@ class _SearchStudentPageState extends State<SearchStudentPage> {
                             _currentSortColumn = columnIndex;
                             if (_isAscending == true) {
                               _isAscending = false;
-// sort the product list in Ascending, order by Price
+
                               etudList.sort((etudA, etudB) =>
                                   etudA.et_cne.compareTo(etudB.et_cne));
                             } else {
                               _isAscending = true;
-// sort the product list in Descending, order by Price
+
                               etudList.sort((etudB, etudA) =>
                                   etudA.et_cne.compareTo(etudB.et_cne));
                             }
@@ -241,12 +241,12 @@ class _SearchStudentPageState extends State<SearchStudentPage> {
                             _currentSortColumn = columnIndex;
                             if (_isAscending == true) {
                               _isAscending = false;
-// sort the product list in Ascending, order by Price
+
                               etudList.sort((etudA, etudB) => etudA.et_firstName
                                   .compareTo(etudB.et_firstName));
                             } else {
                               _isAscending = true;
-// sort the product list in Descending, order by Price
+
                               etudList.sort((etudB, etudA) => etudA.et_firstName
                                   .compareTo(etudB.et_firstName));
                             }
@@ -264,12 +264,10 @@ class _SearchStudentPageState extends State<SearchStudentPage> {
                             _currentSortColumn = columnIndex;
                             if (_isAscending == true) {
                               _isAscending = false;
-// sort the product list in Ascending, order by Price
                               etudList.sort((etudA, etudB) =>
                                   etudA.et_lastName.compareTo(etudB.et_lastName));
                             } else {
                               _isAscending = true;
-// sort the product list in Descending, order by Price
                               etudList.sort((etudB, etudA) =>
                                   etudA.et_lastName.compareTo(etudB.et_lastName));
                             }

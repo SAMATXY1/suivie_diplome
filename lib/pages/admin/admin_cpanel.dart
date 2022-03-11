@@ -108,12 +108,10 @@ class _AdminControlPanelState extends State<AdminControlPanel> {
                     _currentSortColumn = columnIndex;
                     if (_isAscending == false) {
                       _isAscending = true;
-// sort the product list in Ascending, order by Price
                       staffList.sort((staffA, staffB) =>
                           staffA.sa_nom.compareTo(staffB.sa_nom));
                     } else {
                       _isAscending = false;
-// sort the product list in Descending, order by Price
                       staffList.sort((staffB, staffA) =>
                           staffA.sa_nom.compareTo(staffB.sa_nom));
                     }
@@ -131,13 +129,11 @@ class _AdminControlPanelState extends State<AdminControlPanel> {
                     _currentSortColumn = columnIndex;
                     if (_isAscending == true) {
                       _isAscending = false;
-// sort the product list in Ascending, order by Price
                       staffList.sort((staffA, staffB) => staffA
                           .sa_role.role_name
                           .compareTo(staffB.sa_role.role_name));
                     } else {
                       _isAscending = true;
-// sort the product list in Descending, order by Price
                       staffList.sort((staffB, staffA) => staffA
                           .sa_role.role_name
                           .compareTo(staffB.sa_role.role_name));

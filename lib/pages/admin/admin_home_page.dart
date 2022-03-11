@@ -363,7 +363,6 @@ class _AdminHomePageState extends State<AdminHomePage> {
                                         DataColumn(
                                             onSort: (columnIndex, _) {
                                               setState(() {
-// sort the product list in Ascending, order by Price
                                                 activitiesSa.sort((act2, act1) =>
                                                     act1[2].compareTo(act2[2]));
                                               });
